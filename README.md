@@ -15,9 +15,9 @@ Let’s understand the widely accepted definition of strategy pattern which you 
 
 3) **Make them interchangeable-** The beauty with strategy pattern is we can select at run time which algorithm we should apply to our object and can replace them with one another
 
-### Markdown
+### Using the code
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Let’s go through an example which would use the strategy pattern and would make everything clear.
 
 ```markdown
 Syntax highlighted code block
@@ -37,12 +37,5 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+For more details see [The Strategy Pattern Repository](https://github.com/smithasencios/StrategyPattern).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/smithasencios/smithasencios.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
