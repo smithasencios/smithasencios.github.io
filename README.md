@@ -1,8 +1,7 @@
 ## Strategy Pattern
 
-You can use the [editor on GitHub](https://github.com/smithasencios/smithasencios.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Introduction
+Strategy pattern can be categorized as behavioral design pattern and it is simple and powerful. It can be considered in a kind of scenario where your object would perform a common action and that too selecting from various options available.
 
 ### Markdown
 
