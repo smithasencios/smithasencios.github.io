@@ -3,6 +3,9 @@
 ### Introduction
 Strategy pattern can be categorized as behavioral design pattern and it is simple and powerful. It can be considered in a kind of scenario where your object would perform a common action and that too selecting from various options available.
 
+### UML class diagram
+![Image](src)
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
