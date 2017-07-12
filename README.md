@@ -4,7 +4,7 @@
 Strategy pattern can be categorized as behavioral design pattern and it is simple and powerful. It can be considered in a kind of scenario where your object would perform a common action and that too selecting from various options available.
 
 ### UML class diagram
-![Image](src)
+![Image](http://www.dofactory.com/images/diagrams/net/strategy.gif)
 
 ### Markdown
 
