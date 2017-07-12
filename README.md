@@ -6,6 +6,15 @@ Strategy pattern can be categorized as behavioral design pattern and it is simpl
 ### UML class diagram
 ![Image](http://www.dofactory.com/images/diagrams/net/strategy.gif)
 
+### How it works?
+Let’s understand the widely accepted definition of strategy pattern which you can find from various resources on net. “**Strategy pattern defines a family of algorithms, encapsulates each one of them and makes them interchangeable.**” Confused with the definition? let’s try to break it in three parts:-
+
+1) **Family of Algorithms-** The definition says that the pattern defines the family of algorithms- it means we have functionality (in these algorithms) which will do the same common thing for our object, but in different ways.
+
+2) **Encapsulate each one of them-** The pattern would force you to place your algorithms in different classes (encapsulate them). Doing so would help us in selecting the appropriate algorithm for our object.
+
+3) **Make them interchangeable-** The beauty with strategy pattern is we can select at run time which algorithm we should apply to our object and can replace them with one another
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
