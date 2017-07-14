@@ -26,7 +26,9 @@ Let’s go through an example which would use the strategy pattern and would mak
         bool IsApplicable(int indicador);
         void Proceed();
     }
-    
+```
+
+```markdown    
     public abstract class BaseFormat : IFormat
     {
         protected int commonVariable = 0;
@@ -46,7 +48,9 @@ Let’s go through an example which would use the strategy pattern and would mak
             Console.Write("just format 1");
         }
     }
-    
+
+```
+```markdown   
     public class Format1 : BaseFormat
     {
         public override void ExecuteProceed()
@@ -63,7 +67,10 @@ Let’s go through an example which would use the strategy pattern and would mak
         }
 
     }
-    
+```
+
+```markdown
+
      public class Format2 : BaseFormat
     {
         public override void ExecuteProceed()
@@ -84,6 +91,10 @@ Let’s go through an example which would use the strategy pattern and would mak
 
     }
     
+```
+
+```markdown    
+
      class Program
     {
         static void Main(string[] args)
@@ -108,7 +119,6 @@ Let’s go through an example which would use the strategy pattern and would mak
         }
     }
             
-[Link](url) and ![Image](src)
 ```
 
 For more details see [The Strategy Pattern Repository](https://github.com/smithasencios/StrategyPattern).
