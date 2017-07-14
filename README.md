@@ -20,20 +20,94 @@ Let’s understand the widely accepted definition of strategy pattern which you 
 Let’s go through an example which would use the strategy pattern and would make everything clear.
 
 ```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+    public interface IFormat
+    {
+        bool IsApplicable(int indicador);
+        void Proceed();
+    }
+    
+    public abstract class BaseFormat : IFormat
+    {
+        protected int commonVariable = 0;
+        public abstract bool IsApplicable(int indicador);
 
-- Bulleted
-- List
+        public void Proceed()
+        {
+            commonVariable = 1;
+            Console.Write("Something Common");
+            ExecuteProceed();
+            ExecuteProceed1();
+        }
 
-1. Numbered
-2. List
+        public abstract void ExecuteProceed();
+        public virtual void ExecuteProceed1()
+        {
+            Console.Write("just format 1");
+        }
+    }
+    
+    public class Format1 : BaseFormat
+    {
+        public override void ExecuteProceed()
+        {
+            commonVariable = commonVariable + 5;
+            Console.WriteLine("Format 1");
+        }
 
-**Bold** and _Italic_ and `Code` text
+        public override bool IsApplicable(int indicador)
+        {
+            if (indicador == 1) return true;
+            return false;
 
+        }
+
+    }
+    
+     public class Format2 : BaseFormat
+    {
+        public override void ExecuteProceed()
+        {
+            Console.WriteLine("Format 2");
+        }
+
+        public override bool IsApplicable(int indicador)
+        {
+            if (indicador == 2) return true;
+            return false;
+        }
+
+        public override void ExecuteProceed1()
+        {
+            Console.WriteLine("just format 22 with virtual");
+        }
+
+    }
+    
+     class Program
+    {
+        static void Main(string[] args)
+        {
+            Random rnd = new Random();
+            int indicador = 1;
+            var formatList = GetFormats();
+            var format = formatList.FirstOrDefault(x => x.IsApplicable(indicador));
+            format.Proceed();
+            Console.ReadLine();
+        }
+
+        private static List<IFormat> GetFormats()
+        {
+            var formatList = new List<IFormat>()
+            {
+                new Format1(),
+                new Format2()
+            };
+            return formatList;
+
+        }
+    }
+            
 [Link](url) and ![Image](src)
 ```
 
